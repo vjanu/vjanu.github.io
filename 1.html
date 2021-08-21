@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function add(){
+var a,b,c,d,p;
+a=Number(document.getElementById("first").value);
+b=Number(document.getElementById("second").value);
+c=Number(document.getElementById("amt").value);
+p=Number(document.getElementById("pro").value);
+d= (a/c)*b;
+p=d-a;
+document.getElementById("answer").value= d;
+document.getElementById("pro").value= p;
+}
+</script>
+</head>
+<body>
+Old value : <input id="first">  Amount : <input id="amt"> <br/><br/>
+New Value: <input id="second"> <br/><br/>
+<button onclick="add()">Profit</button>
+Return : <input id="answer"> Profit : <input id="pro"><br/>
+</body>
+</html>
